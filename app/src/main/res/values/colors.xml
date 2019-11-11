@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <color name="colorPrimary">#0a95b9</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="colorWhite">#FDFDFE</color>
+    <color name="colorRed">#D63334</color>
+    <color name="colorGray">#dbdbdb</color>
+
+
+    <color name="color_btn_process">#7EB83E</color>
+    <color name="black">#000000</color>
+
+    <color name="ijk_color_blue_main">@color/ijk_color_blue_500</color>
+    <color name="ijk_color_blue_50">#E3F2FD</color>
+    <color name="ijk_color_blue_100">#BBDEFB</color>
+    <color name="ijk_color_blue_200">#90CAF9</color>
+    <color name="ijk_color_blue_300">#64B5F6</color>
+    <color name="ijk_color_blue_400">#42A5F5</color>
+    <color name="ijk_color_blue_500">#2196F3</color>
+    <color name="ijk_color_blue_600">#1E88E5</color>
+    <color name="ijk_color_blue_700">#1976D2</color>
+    <color name="ijk_color_blue_800">#1565C0</color>
+    <color name="ijk_color_blue_900">#0D47A1</color>
+
+    <color name="ijk_transparent_dark">#77000000</color>
+
+    <!-- Grey-->
+    <color name="Grey_50">#FAFAFA</color>
+    <color name="Grey_100">#F5F5F5</color>
+    <color name="Grey_200">#EEEEEE</color>
+    <color name="Grey_300">#E0E0E0</color>
+    <color name="Grey_400">#BDBDBD</color>
+    <color name="Grey_500">#9E9E9E</color>
+    <color name="Grey_600">#757575</color>
+    <color name="Grey_700">#616161</color>
+    <color name="Grey_800">#424242</color>
+    <color name="Grey_900">#212121</color>
+    <!--toolbar背景色-->
+    <color name="colorToolbar">#01172F</color>
+    <!--tab指示器颜色,文字选中-->
+    <color name="colorTabIndicator">#0066CB</color>
+    <color name="colorTabUnselect">#666465</color>
+    <color name="colorTabBg">#F2F2F4</color>
+    <color name="colorBnbInactive">#302625</color>
+
+    <!--大部分文字的颜色：label、按钮-->
+    <color name="mainText">#2F2724</color>
+    <!--内容文字颜色-->
+    <color name="contentsText">#727272</color>
+
+    <!--分割线的颜色-->
+    <color name="colorLine">#DBDBDB</color>
+    <color name="carInfoLabel">#80888888</color>
+    <!--主背景色-->
+    <color name="mainBg">#EFEEF4</color>
+    <color name="colorWhite50">#80FDFDFE</color>
+    <color name="colorPressed">#E2E1E7</color>
+    <color name="colorSort">#3E3A39</color>
+    <color name="add_camera_photo_bg">#f1f1f1</color>
+
+    <color name="divide_line_color">#eaeaea</color><!-- 分割线色 -->
+    <color name="main_colors">#008ef2</color><!--主题颜色-->
+    <color name="black_28">#282828</color><!-- 黑色字 -->
+    <color name="grey_text_color">#a3a3a3</color><!-- 灰色字 -->
+    <color name="grey_text_color6">#888888</color><!-- 灰色字-->
+    <color name="white">#ffffff</color><!--主题颜色-->
+    <color name="transp">#00000000</color>
+    <color name="colorBnbActive">#0098FE</color><!--透明transparency-->
+
+    <color name="progressBar_color">#0066CC</color>
+    <color name="notice_color">#FFC107</color>
+
+
+</resources>

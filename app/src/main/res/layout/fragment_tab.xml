@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragment.base.TabFragment">
+
+    <!--列表+刷新-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/tab_fragment_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.homedemo.recyclerView.EmptyRecyclerView
+            android:id="@+id/tab_fragment_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        </com.example.homedemo.recyclerView.EmptyRecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <include android:id="@+id/id_loading_view"
+        layout="@layout/layout_loading_view"/>
+
+
+    <TextView
+        android:id="@+id/tab_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        tools:text="@string/hello_blank_fragment" />
+
+</FrameLayout>

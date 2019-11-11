@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--CoordinatorLayout-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <include layout="@layout/title" />
+
+    <!-- app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"-->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior" />
+
+
+    <!--
+    如果BottomNavigationBar是在CoordinatorLayout布局里，默认设置当向下滑动时会自动隐藏它，当向上滑动时会自动显示它
+     可通过app:bnbAutoHideEnabled="false"设置
+    -->
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="visible"
+        app:bnbAutoHideEnabled="false" />
+
+</android.support.design.widget.CoordinatorLayout>

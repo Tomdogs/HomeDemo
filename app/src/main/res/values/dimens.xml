@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--tab title字体大小-->
+    <dimen name="tab_title_size">12sp</dimen>
+    <!--tab红点大小-->
+    <dimen name="red_dot_size">5dp</dimen>
+    <!--tab栏高度-->
+    <dimen name="tab_height">42dp</dimen>
+
+
+    <!--主页列表item-->
+    <!--图片大小-->
+    <dimen name="rcy_item_iv_width">80dp</dimen>
+    <dimen name="rcy_item_iv_height">55dp</dimen>
+    <!--按钮大小-->
+    <dimen name="rcy_item_btn_process_width">55dp</dimen>
+    <dimen name="rcy_item_btn_process_height">25dp</dimen>
+    <dimen name="rcy_item_btn_process_text_size">13sp</dimen>
+    <!--状态文字大小-->
+    <dimen name="rcy_item_tv_state_text_size">12sp</dimen>
+    <!--标题文字大小-->
+    <dimen name="rcy_item_tv_title_text_size">14sp</dimen>
+    <!--信息内容文字大小-->
+    <dimen name="rcy_item_tv_content_text_size">15sp</dimen>
+
+
+    <!--我的-->
+    <!--列表标签字体大小-->
+    <dimen name="me_label_size">16sp</dimen>
+    <!--列表上下距离-->
+    <dimen name="me_lable_top_dis">10dp</dimen>
+
+    <!--上报-->
+    <dimen name="report_label_size">16sp</dimen>
+
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <!--报警详情界面文字大小-->
+    <dimen name="alert_tv_size">16sp</dimen>
+
+    <dimen name="ijk_horizontal_margin">16dp</dimen>
+    <dimen name="ijk_vertical_margin">16dp</dimen>
+
+    <!--bnb图片和文字的间距,默认10dp,值越小，距离越大，适用于MODE_FIXED模式-->
+    <dimen name="fixed_height_bottom_padding">7dp</dimen>
+    <!--bnb badgeitem文字左右padding 默认4dp-->
+    <dimen name="badge_width_padding">4dp</dimen>
+    <!--bnb badgeitem文字上方margin 默认2dp-->
+    <dimen name="badge_top_margin">2dp</dimen>
+    <!--bnb图片大小-->
+    <dimen name="fixed_icon_grid">22dp</dimen>
+    <!--bnb文字大小-->
+    <item format="float" name="fixed_label_active_to_inactive_ratio" type="dimen">1.0</item>
+    <dimen name="fixed_label_active">13sp</dimen>
+    <dimen name="fixed_label_inactive">13sp</dimen>
+
+
+    <dimen name="alert_tv_dis">12dp</dimen>
+    <dimen name="alert_tv_dis_start">20dp</dimen>
+    <dimen name="iv_photo_width">80dp</dimen>
+    <dimen name="tab_indicator_height">3dp</dimen>
+
+    <dimen name="wximage_cha_size">24dp</dimen>
+    <dimen name="copyright_size">12sp</dimen>
+    <dimen name="scene_tv_padding">5dp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <!--我的界面图片大小-->
+    <dimen name="me_iv_label_width">20dp</dimen>
+    <dimen name="me_iv_label_dis">8dp</dimen>
+    <dimen name="help_detail_iv_dis_top">7dp</dimen>
+
+    <!--标题和内容之间的距离-->
+    <dimen name="label_content_distance">12dp</dimen>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.MessageFragment">
+
+    <!--测试按钮-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/message_fragment_btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="显示红点"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <Button
+            android:id="@+id/message_fragment_btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="取消红点显示"
+            app:layout_constraintStart_toEndOf="@id/message_fragment_btn1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+
+
+        <Button
+            android:id="@+id/message_fragment_btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="tab0显示红点"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/message_fragment_btn1"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <Button
+            android:id="@+id/message_fragment_btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="tab0取消红点"
+            app:layout_constraintStart_toEndOf="@id/message_fragment_btn3"
+            app:layout_constraintTop_toTopOf="@id/message_fragment_btn3"
+            app:layout_constraintWidth_percent="0.5" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/message_fragment_tab_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/tab_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.9"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabMode="scrollable" />
+
+
+        <ImageView
+            android:id="@+id/message_fragment_btn_sort"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/tab_height"
+            android:background="@color/colorGray"
+            android:src="@mipmap/ic_sort"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/message_fragment_tab_layout"
+            app:layout_constraintWidth_percent="0.1" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/message_fragment_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/message_fragment_tab_layout" />
+
+</LinearLayout>

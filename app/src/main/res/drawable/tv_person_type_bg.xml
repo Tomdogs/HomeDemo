@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--人员报警-列管类型的背景-->
+    <solid android:color="@color/colorRed" />
+    <corners android:radius="20dp" />
+    <padding
+        android:bottom="3dp"
+        android:left="15dp"
+        android:right="15dp"
+        android:top="3dp" />
+</shape>

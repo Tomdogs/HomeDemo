@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HomeDemo</string>
+
+    <string name="scene">场景</string>
+    <string name="me">我的</string>
+    <string name="message">消息</string>
+    <string name="add">上报</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nomore">没有更多数据了</string>
+    <string name="loading">正在加载...</string>
+    <string name="process">处置</string>
+    <string name="waitting_process">待处置</string>
+
+    <string name="error_net">网络错误</string>
+</resources>
