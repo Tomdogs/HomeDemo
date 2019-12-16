@@ -1,81 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <resources>
 
-    <!--tab title字体大小-->
-    <dimen name="tab_title_size">12sp</dimen>
-    <!--tab红点大小-->
-    <dimen name="red_dot_size">5dp</dimen>
-    <!--tab栏高度-->
-    <dimen name="tab_height">42dp</dimen>
-
-
-    <!--主页列表item-->
-    <!--图片大小-->
-    <dimen name="rcy_item_iv_width">80dp</dimen>
-    <dimen name="rcy_item_iv_height">55dp</dimen>
-    <!--按钮大小-->
-    <dimen name="rcy_item_btn_process_width">55dp</dimen>
-    <dimen name="rcy_item_btn_process_height">25dp</dimen>
-    <dimen name="rcy_item_btn_process_text_size">13sp</dimen>
-    <!--状态文字大小-->
-    <dimen name="rcy_item_tv_state_text_size">12sp</dimen>
-    <!--标题文字大小-->
-    <dimen name="rcy_item_tv_title_text_size">14sp</dimen>
-    <!--信息内容文字大小-->
-    <dimen name="rcy_item_tv_content_text_size">15sp</dimen>
-
-
-    <!--我的-->
-    <!--列表标签字体大小-->
-    <dimen name="me_label_size">16sp</dimen>
-    <!--列表上下距离-->
-    <dimen name="me_lable_top_dis">10dp</dimen>
-
-    <!--上报-->
-    <dimen name="report_label_size">16sp</dimen>
-
-    <dimen name="activity_horizontal_margin">5dp</dimen>
-    <!--报警详情界面文字大小-->
-    <dimen name="alert_tv_size">16sp</dimen>
-
-    <dimen name="ijk_horizontal_margin">16dp</dimen>
-    <dimen name="ijk_vertical_margin">16dp</dimen>
-
-    <!--bnb图片和文字的间距,默认10dp,值越小，距离越大，适用于MODE_FIXED模式-->
-    <dimen name="fixed_height_bottom_padding">7dp</dimen>
-    <!--bnb badgeitem文字左右padding 默认4dp-->
-    <dimen name="badge_width_padding">4dp</dimen>
-    <!--bnb badgeitem文字上方margin 默认2dp-->
-    <dimen name="badge_top_margin">2dp</dimen>
-    <!--bnb图片大小-->
-    <dimen name="fixed_icon_grid">22dp</dimen>
-    <!--bnb文字大小-->
-    <item format="float" name="fixed_label_active_to_inactive_ratio" type="dimen">1.0</item>
-    <dimen name="fixed_label_active">13sp</dimen>
-    <dimen name="fixed_label_inactive">13sp</dimen>
-
-
-    <dimen name="alert_tv_dis">12dp</dimen>
-    <dimen name="alert_tv_dis_start">20dp</dimen>
-    <dimen name="iv_photo_width">80dp</dimen>
-    <dimen name="tab_indicator_height">3dp</dimen>
-
-    <dimen name="wximage_cha_size">24dp</dimen>
-    <dimen name="copyright_size">12sp</dimen>
-    <dimen name="scene_tv_padding">5dp</dimen>
-    <dimen name="title_size">20sp</dimen>
-    <!--我的界面图片大小-->
-    <dimen name="me_iv_label_width">20dp</dimen>
-    <dimen name="me_iv_label_dis">8dp</dimen>
-    <dimen name="help_detail_iv_dis_top">7dp</dimen>
-
-    <!--标题和内容之间的距离-->
-    <dimen name="label_content_distance">12dp</dimen>
-
-
-
     <!-- Your custom size defind by references, can be writted in anywhere, any module, any values/*.xml, for example: -->
-    <dimen name="common_margin">@dimen/dp_15</dimen>
+    <dimen name="card_common_margin_left">@dimen/dp_15</dimen>
 
     <!-- dp and sp values, must be defind in this file! -->
     <!-- view size,you can add if there is no one -->
@@ -102,6 +29,7 @@
     <dimen name="dp_5">5dp</dimen>
     <dimen name="dp_6">6dp</dimen>
     <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_7_5">7.5dp</dimen>
     <dimen name="dp_8">8dp</dimen>
     <dimen name="dp_9">9dp</dimen>
     <dimen name="dp_10">10dp</dimen>
@@ -199,6 +127,7 @@
     <dimen name="dp_102">102dp</dimen>
     <dimen name="dp_103">103dp</dimen>
     <dimen name="dp_104">104dp</dimen>
+    <dimen name="dp_104_5">104.5dp</dimen>
     <dimen name="dp_105">105dp</dimen>
     <dimen name="dp_106">106dp</dimen>
     <dimen name="dp_107">107dp</dimen>
@@ -229,6 +158,7 @@
     <dimen name="dp_132">132dp</dimen>
     <dimen name="dp_133">133dp</dimen>
     <dimen name="dp_134">134dp</dimen>
+    <dimen name="dp_134_5">134.5dp</dimen>
     <dimen name="dp_135">135dp</dimen>
     <dimen name="dp_136">136dp</dimen>
     <dimen name="dp_137">137dp</dimen>
@@ -286,6 +216,7 @@
     <dimen name="dp_189">189dp</dimen>
     <dimen name="dp_190">190dp</dimen>
     <dimen name="dp_191">191dp</dimen>
+    <dimen name="dp_191_25">191.25dp</dimen>
     <dimen name="dp_192">192dp</dimen>
     <dimen name="dp_193">193dp</dimen>
     <dimen name="dp_194">194dp</dimen>
@@ -496,4 +427,5 @@
     <dimen name="sp_40">40sp</dimen>
     <dimen name="sp_42">42sp</dimen>
     <dimen name="sp_48">48sp</dimen>
+
 </resources>

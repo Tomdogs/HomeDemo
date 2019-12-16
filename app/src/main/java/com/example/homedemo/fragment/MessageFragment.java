@@ -7,6 +7,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.homedemo.R;
 import com.example.homedemo.fragment.base.TabFragment;
+import com.example.homedemo.utils.ConvertUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -153,6 +155,13 @@ public class MessageFragment extends Fragment implements View.OnClickListener {
         //标题
         TextView tabTitle = tab.getCustomView().findViewById(R.id.tab_title);
         tabTitle.setText(title);
+        //获取sp值
+        float pxValue = getResources().getDimension(R.dimen.sp_15);
+        System.out.println(String.format("pxValue:%s",pxValue));
+        Log.i("convert",String.format("pxValue:%s",pxValue));
+        //将px值转换成sp值
+        int spValue = ConvertUtils.px2sp(getActivity(),pxValue);
+        tabTitle.setTextSize(spValue);
         if (isShowRed) {
             //红点
             ImageView tabRedDot = tab.getCustomView().findViewById(R.id.tab_reddot);

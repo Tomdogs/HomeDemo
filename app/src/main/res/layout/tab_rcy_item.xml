@@ -16,7 +16,7 @@
     <!--红色、灰色短线-->
     <ImageView
         android:id="@+id/tab_fragment_iv_line"
-        android:layout_width="6dp"
+        android:layout_width="@dimen/dp_6"
         android:layout_height="0dp"
         android:src="@drawable/tv_person_type_bg"
         app:layout_constraintDimensionRatio="3:13"
@@ -70,7 +70,7 @@
         android:id="@+id/tab_fragment_tv_desc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="@dimen/dp_2"
         android:ellipsize="end"
         android:lines="1"
         android:textColor="#656364"
