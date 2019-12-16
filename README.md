@@ -4,5 +4,4 @@
 * 3.网络架构为retrofit2
 * 4.Android屏幕适配，使用[smallestWidth 限定符 适配原理](https://www.jianshu.com/p/1302ad5a4b04)
 * 5.目前的整体效果如下：
-
 ![](https://github.com/Tomdogs/HomeDemo/raw/master/picture/1573437776524.gif)
