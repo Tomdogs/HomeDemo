@@ -6,10 +6,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
@@ -18,7 +16,7 @@ import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.ashokvarma.bottomnavigation.TextBadgeItem;
 import com.example.homedemo.fragment.MeFragment;
 import com.example.homedemo.fragment.MessageFragment;
-import com.example.homedemo.fragment.SceneFragment;
+import com.example.homedemo.fragment.SceneKotlinFragment;
 
 import java.util.Random;
 
@@ -27,7 +25,8 @@ public class HomeActivity extends AppCompatActivity
     private FragmentManager fragmentManager;
     private FragmentTransaction transaction;
     private MessageFragment messageFragment;
-    private SceneFragment sceneFragment;
+//    private SceneFragment sceneFragment;
+    private SceneKotlinFragment sceneFragment;
     private MeFragment meFragment;
 
     private TextBadgeItem textBadgeItem;//红点
@@ -142,7 +141,8 @@ public class HomeActivity extends AppCompatActivity
                 break;
             case 1:
                 if (null == sceneFragment) {
-                    sceneFragment = SceneFragment.newInstance();
+//                    sceneFragment = SceneFragment.newInstance();
+                    sceneFragment = SceneKotlinFragment.newInstance("","");
                     transaction.add(R.id.container, sceneFragment);
                 } else {
                     transaction.show(sceneFragment);
