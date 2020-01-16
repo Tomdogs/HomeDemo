@@ -1,11 +1,13 @@
 package com.example.homedemo;
 
 import android.os.Bundle;
+import android.os.Looper;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
@@ -14,10 +16,13 @@ import android.widget.Toast;
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.ashokvarma.bottomnavigation.TextBadgeItem;
+import com.example.homedemo.data.dao.UserDao;
+import com.example.homedemo.data.entity.User;
 import com.example.homedemo.fragment.MeFragment;
 import com.example.homedemo.fragment.MessageFragment;
 import com.example.homedemo.fragment.SceneKotlinFragment;
 
+import java.util.List;
 import java.util.Random;
 
 public class HomeActivity extends AppCompatActivity
@@ -44,8 +49,45 @@ public class HomeActivity extends AppCompatActivity
         fragmentManager = getSupportFragmentManager();
         transaction = fragmentManager.beginTransaction();
         initView();
+
+        insert();
     }
 
+    private void insert(){
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                Looper.prepare();
+                Toast.makeText(HomeActivity.this,"在子线程中使用toast",Toast.LENGTH_LONG).show();
+                Looper.loop();
+
+                User user = new User();
+                user.setName("lgd");
+                user.setAge(26);
+
+                User user1 = new User();
+                user1.setName("lgd2");
+                user1.setAge(28);
+
+                UserDao dao = App.getLocalDataBase().userDao();
+//                UserDao dao = LocalDataBase.getInstance(HomeActivity.this).userDao();
+                for (int i = 0; i <10 ; i++) {
+                    dao.insert(user,user1);
+                }
+
+
+                List<User> list = dao.getAllUsers();
+
+                for (int i = 0; i < list.size(); i++) {
+                    Log.i("数据库：",list.get(i)+"");
+                }
+
+            }
+        }).start();
+
+    }
     @Override
     protected void onStart() {
         super.onStart();
