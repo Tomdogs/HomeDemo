@@ -29,7 +29,6 @@ import com.example.homedemo.recyclerView.EmptyRecyclerView;
 import com.example.homedemo.utils.ILog;
 import com.example.homedemo.utils.UnicodeToChinese;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -152,16 +151,14 @@ public class TabFragment extends LazyLoadFragment {
 
     private void getWord(){
         final TranslationRequest request = retrofitWord.create(TranslationRequest.class);
-        final Call<Translation> call = request.getWord();
-        //异步方式获取数据
-        /*call.enqueue(new Callback<Translation>() {
+        Call<Translation> call = request.getWord();
+        call.enqueue(new Callback<Translation>() {
             @Override
             public void onResponse(Call<Translation> call, Response<Translation> response) {
                 if(response.isSuccessful()){
                     String result = UnicodeToChinese.UnicodeToCN(response.body().getContent().getOut());
                     datas.add(result);
                     ILog.i("getWord：",result);
-                    ILog.i("getWord：当前线程：",Thread.currentThread().getName());
                     tabAdapter.notifyDataSetChanged();
                 }
 
@@ -172,23 +169,7 @@ public class TabFragment extends LazyLoadFragment {
             public void onFailure(Call<Translation> call, Throwable t) {
 
             }
-        });*/
-
-        //同步方式获取数据
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                String result = null;
-                try {
-                    result = UnicodeToChinese.UnicodeToCN(call.execute().body().getContent().getOut());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                ILog.i("getWord：",result);
-            }
-        }).start();
-
-
+        });
 
     }
 
